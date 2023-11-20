@@ -1,0 +1,61 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(120deg,rgb(238, 146, 233),rgb(241, 247, 248),rgb(170, 169, 247),rgb(170, 169, 247));
+    gap: 50px;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    background-color: rgb(26, 24, 122);
+    color: white;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+}
+.banner-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.airpod{
+    background-color: #ADC2D7;
+}
+.macbook{
+    display: flex;
+    background-color: #e0e0e0;
+}
+@media  only screen and (max-width:768px){
+    .banner{
+        flex-direction: column;
+    }
+    .banner-left{
+        padding-top: 50px ;
+        align-items: center;
+    }
+    .banner-left h3{
+        font-size: 15px;
+    }
+    .banner-left button{
+        display: none;
+    }
+    .banner-right{
+        align-items: center;
+    }
+    .advertisment{
+        flex-direction: column;
+    }
+    .macbook{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} 
