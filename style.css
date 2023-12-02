@@ -139,12 +139,12 @@ footer{
     }
 
     /* Product section  */
-    .pbtn{
+    .product-btn{
         background-color: rgb(255, 255, 255);
         color: rgb(187, 185, 185);
         border: none;
         font-weight: 600;
-        font-size: small;
+        font-size: smaller;
     }
     .model{
         display: none;
