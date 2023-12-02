@@ -1,55 +1,134 @@
-.banner{
-    display: flex;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* banner section starts here  */
+.banner-main{
     background:linear-gradient(120deg,rgb(238, 146, 233),rgb(241, 247, 248),rgb(170, 169, 247),rgb(170, 169, 247));
-    gap: 50px;
+}
+.banner{
+    height: 70vh;
+    position: relative;
 }
 .banner-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: relative;
+    left: -200px;
 }
-button{
+.banner-right{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+.shop-btn{
     background-color: rgb(26, 24, 122);
     color: white;
-    width: 100px;
+    width: 120px;
     border: none;
     border-radius: 5px;
     font-weight: 600;
-    padding: 5px 10px 5px 10px;
-}
-.banner-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: small;
+    padding: 10px 15px 10px 15px;
 }
 
 
+/* Advertisment section starts here  */
 .airpod{
     background-color: #ADC2D7;
 }
 .macbook{
-    display: flex;
-    background-color: #e0e0e0;
+    background-color: #EDEDED;
 }
-@media  only screen and (max-width:768px){
+
+/* category section */
+.category{
+    min-width: 140px;
+    max-width: 160px;
+    height: 128px;
+    margin: 15px 10px;
+}
+
+/* product section */
+.product{
+    max-width: 300px;
+    min-width: 160px;
+    height: 380px;
+    margin: 15px 10px;
+    position: relative;
+}
+.price{
+    position: absolute;
+    bottom: 15px;
+}
+.product-btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(187, 185, 185);
+    border: none;
+    padding: 0;
+    font-weight: 600;
+    font-size: large;
+}
+#selected-product-btn{
+    color: rgb(0, 0, 0);
+    border-bottom:2px solid black;
+}
+
+/* sale offer section  */
+.sale-offer{
+    background-color: #958AD4;
+    color: white;
+    font-weight: 200px;
+}
+.sale-offer span{
+    color: #120a42;
+}
+
+/* footer section  */
+footer{
+    background-color: #0E071B ;
+    color: #CFCFCF;
+}
+
+/* responsive css  */
+@media  only screen and (max-width:576px){
+    /* banner section  */
     .banner{
-        flex-direction: column;
+        height: 40vh;
+        position: relative;
     }
     .banner-left{
-        padding-top: 50px ;
-        align-items: center;
+        margin-top: 20px;
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        transform: translate(-50%);
     }
     .banner-left h3{
+        text-align: center;
         font-size: 15px;
+    }
+    .banner-left h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    .banner-left p{
+        text-align: center;
+        font-size: 10px;
     }
     .banner-left button{
         display: none;
     }
     .banner-right{
-        align-items: center;
+        position: absolute;
+        width: 250px;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%);
     }
+
+    /* advertisment section  */
     .advertisment{
         flex-direction: column;
     }
@@ -57,5 +136,17 @@ button{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    /* Product section  */
+    .pbtn{
+        background-color: rgb(255, 255, 255);
+        color: rgb(187, 185, 185);
+        border: none;
+        font-weight: 600;
+        font-size: small;
+    }
+    .model{
+        display: none;
     }
 } 
